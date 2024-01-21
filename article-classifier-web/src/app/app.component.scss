@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  background: #333;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.app-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.classifier-card {
+  background: #444;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.input-type-selector {
+  margin-bottom: 20px;
+
+  label {
+    color: white;
+  }
+}
+
+.input-select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #555;
+  color: white;
+  border: 1px solid #666;
+  appearance: none;
+}
+
+.text-input-container, .file-input-container {
+  margin-bottom: 20px;
+}
+
+.text-input, .file-input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #555;
+  color: white;
+  border: 1px solid #666;
+}
+
+.predict-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 20px 0;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.category {
+  background: #555;
+  color: white;
+  text-align: center;
+  width: 140px;
+  height: 140px;
+  line-height: 140px;
+  margin: 10px;
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.category:hover {
+  transform: scale(1.1);
+}
+
+.highlighted {
+  background-color: #4CAF50;
+}
